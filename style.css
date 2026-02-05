@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #110338;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 20px;
+  background-color: #00b3ff3f;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.container h1 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-input {
+  background: #fff;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.card-input form {
+  display: flex;
+  gap: 10px;
+}
+
+.card-input input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.card-input input:focus {
+  border-color: #4facfe;
+}
+
+.card-input button {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: none;
+  background-color: #63c2fa;
+  color: #fff;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card-input button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-list {
+  display: none;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+#list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.item span {
+  color: #333;
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.btn-delete:hover {
+  transform: scale(1.2);
+}
